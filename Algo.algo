@@ -1,0 +1,35 @@
+ALGORITHME: 
+
+  j:INTEGER
+  f:INTEGER
+  split:STRING
+ phrase:STRING
+ nombreVoyelle:INTEGER:=0;  
+ nombreMot:INTEGER:=0 
+ split:=" "
+
+
+BEGIN
+    write ("Veuillez saisir une phrase");
+    Read(phrase);
+    Write("la taille de la phrase est:"+phrase.lenght);
+
+    FOR j FROM 0 TO phrase.lenght-1 STEP 1 DO
+        IF(phrase[i]:="a" OR phrase[i]:="e" OR phrase[i]:="i" OR phrase[i]:="o" OR phrase[i]:="u" OR phrase[i]:="y" OR ) THEN
+            nombreVoyelle:=nombreVoyelle+1
+        END_IF
+    END_FOR
+    write("le nombre de voyelle est de",nombreVoyelle)
+
+   
+    FOR f FROM TO split.lenght STEP 1 DO
+        IF(phrase[i]:=<>" ") THEM
+            nombreMot:=nombreMot+1
+        END_IF
+    END_FOR
+
+    write("le nombre de mot est de:",nombreMot)
+    
+
+
+END
